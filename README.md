@@ -1,1 +1,1 @@
-# Ini kosong
+# Kosong
