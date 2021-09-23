@@ -1,1 +1,1 @@
-# Batam_Linux
+# Ini kosong
