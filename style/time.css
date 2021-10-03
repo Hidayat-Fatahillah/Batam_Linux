@@ -16,6 +16,8 @@ body {
     width: 15%;
     border-radius: 10px;
     box-sizing: border-box;
+    background-color: #fff;
+    color: #302f2f;
 }
 #jam::after {
     content: "";
