@@ -25,25 +25,26 @@
             }, 700);
         }
 
+        //ini fungsi untuk jam
         function jam() {
             setInterval(function () {
-                var waktu = new Date();
-                var jam   = document.getElementById('jam');
-                var hours = waktu.getHours();
-                var minutes = waktu.getMinutes();
-                var seconds = waktu.getSeconds();
+                var waktu = new Date(); //variabel ini memanggil Date sebagai waktu
+                var jam   = document.getElementById('jam'); 
+                var hours = waktu.getHours(); //variabel ini memanggil fungsi dari Date.getHours menjadi hours
+                var minutes = waktu.getMinutes(); //variabel ini memanggil fungsi dari Date.getMinutes menjadi minutes
+                var seconds = waktu.getSeconds(); //variabel ini memanggil fungsi dari Date.getSeconds menjadi seconds
 
-                if (waktu.getHours() < 10)
+                if (waktu.getHours() < 10) //jika hours < 10 maka:
                 {
-                    hours = '0' + waktu.getHours();
+                    hours = '0' + waktu.getHours(); //hours = '0' + hours
                 }
-                if (waktu.getMinutes() < 10)
+                if (waktu.getMinutes() < 10) //jika minutes < 10 maka:
                 {
-                    minutes = '0' + waktu.getMinutes();
+                    minutes = '0' + waktu.getMinutes(); //minutes = '0' + minutes
                 }
-                if (waktu.getSeconds() < 10)
+                if (waktu.getSeconds() < 10) //jika seconds < 10 maka:
                 {
-                    seconds = '0' + waktu.getSeconds();
+                    seconds = '0' + waktu.getSeconds(); //seconds = '0' + seconds
                 }
                 jam.innerHTML  = '<span>' + hours + '</span>'
                                 + '<span>' + minutes + '</span>'
